@@ -1,0 +1,42 @@
+.title {
+  &--big {
+    font-family: $secondary-font;
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  &--middle {
+    font-family: $secondary-font;
+    font-size: 45px;
+    color: $secondary-font-color;
+    font-weight: bold;
+  }
+
+  &--little {
+    font-family: $primary-font;
+    font-size: 24px;
+    color: $secondary-font-color;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .title {
+    &--big {
+      font-size: 100px;
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .title {
+    &--big {
+      font-size: 60px;
+    }
+
+    &--little {
+      font-size: 22px;
+    }
+  }
+}

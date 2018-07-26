@@ -1,8 +1,18 @@
 @import "variables";
-@import "fonts";
 @import "mixins";
 @import "centering";
 @import "visually-hidden";
+@import "title";
+@import "header";
+@import "toggle";
+@import "hero";
+@import "advantages";
+@import "portfolio";
+@import "services";
+@import "video";
+@import "stages";
+@import "feedback";
+@import "footer";
 
 img {
   max-width: 100%;

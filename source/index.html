@@ -3,20 +3,207 @@
   <head>
     <meta charset="utf-8">
     <title>Демо-страница</title>
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div style="display: none">
+    <!-- <div style="display: none">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div> -->
+    <header class="header">
+      <div class="header__centering">
+        <div class="header__wrapper">
+          <p>хедер это я</p>
+          <a class="header__logo" href="#"></a>
+          <div class="header__toggle toggle">
+            <input class="toggle__input" id="click" name="exit" type="checkbox"></input>
+            <label class="toggle__label" for="click">
+            <span class="toggle__burger">
+          </div>
+        </div>
+        <div class="header__navigation-mask">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">Главная</li>
+              <li class="navigation__item">Преимущества</li>
+              <li class="navigation__item">Портфолио</li>
+              <li class="navigation__item">Наши услуги</li>
+              <li class="navigation__item">Отзывы</li>
+              <li class="navigation__item">Контакты</li>
+            </ul>
+          </nav>
+          <div class="header__social social">
+            <ul class="social__list">
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      main
+
+      <section class="hero">
+        <div class="hero__centering">
+          <h1 class="hero__title title title--big">Дизайн интерьеров</h1>
+          <p class="hero__slogan">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
+          <button class="hero__button" type="button">Заказать дизайн</button>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__centering">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title title title--little">Берем весь ремонт на себя</h3>
+              <p class="advantages__text text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title title title--little">Берем весь ремонт на себя</h3>
+              <p class="advantages__text text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title title title--little">Берем весь ремонт на себя</h3>
+              <p class="advantages__text text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title title title--little">Берем весь ремонт на себя</h3>
+              <p class="advantages__text text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="portfolio__centering">
+          <h2 class="portfolio__title title title--middle">Портфолио</h2>
+          <div class="portfolio__slider-wrapper">
+            <ul class="portfolio__list">
+              <li class="portfolio__item">Все проекты</li>
+              <li class="portfolio__item">Дизайн интерьеров</li>
+              <li class="portfolio__item">Отделочные работы</li>
+            </ul>
+            <div class="portfolio__slider-list">
+              <figure class="portfolio__slider-item">
+                <img class="portfolio__slider-image" src="img/room-1.jpg" width="260" height="529" alt="Дизайн гостинной в светлых тонах">
+                <figcaption>Дизайн интерьера гостинной</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="services__centering">
+          <h2 class="services__title title title--middle">Наши услуги</h2>
+          <div class="services__slider-wrapper">
+            <ul class="services__list">
+              <li class="services__item">Дизайн жилого помещения</li>
+              <li class="services__item">Дизайн отельных комнат</li>
+              <li class="services__item">Дизайн коммерческих объектов</li>
+              <li class="services__item">Ремонт под ключ</li>
+              <li class="services__item">Отделочные работы</li>
+              <li class="services__item">Выезд дизайнера на дом</li>
+            </ul>
+            <div class="services__slider-list">
+              <div class="services__slider-item">
+                <img class="services__image" src="img/room-2.jpg" width="320" height="390" alt="Пример коммерческого дизайна">
+                <p>Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+                <a class="services__button" href="#">Консультация</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <p>тут должно быть видео</p>
+      </section>
+
+      <section class="stages">
+        <div class="stages__centering">
+          <h2 class="stages__title title title--middle">Этапы работы</h2>
+          <ul class="stages__list">
+            <li class="stages__item">
+              <h3 class="stages__title title title--little">Консультация</h3>
+              <p class="stages__text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.</p>
+            </li>
+            <li class="stages__item">
+              <h3 class="stages__title title title--little">Консультация</h3>
+              <p class="stages__text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.</p>
+            </li>
+            <li class="stages__item">
+              <h3 class="stages__title title title--little">Консультация</h3>
+              <p class="stages__text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.</p>
+            </li>
+            <li class="stages__item">
+              <h3 class="stages__title title title--little">Консультация</h3>
+              <p class="stages__text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.</p>
+            </li>
+            <li class="stages__item">
+              <h3 class="stages__title title title--little">Консультация</h3>
+              <p class="stages__text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.</p>
+            </li>
+            <li class="stages__item">
+              <h3 class="stages__title title title--little">Консультация</h3>
+              <p class="stages__text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="feedback__centering">
+          <h2 class="feedback__title title title--middle">Мечтаете об интерьере от BRUME?</h2>
+          <p class="feedback__text">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.</p>
+          <form class="feedback__form" action="index.html" method="post">
+            <label for=""></label>
+            <input type="text" name="" value="">
+            <label for=""></label>
+            <input type="text" name="" value="">
+            <label for=""></label>
+            <input type="text" name="" value="">
+            <button type="submit" name="button"></button>
+          </form>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title title title--middle">Отзывы наших клиентов</h2>
+        <div class="reviews__slider">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <img class="reviews__photo" src="" alt="">
+              <h3 class="reviews__title">Александра Холодная</h3>
+              <span>Услуга: интерьер детской</span>
+              <p class="reviews__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <include src="source/_footer.html"></include>
+
+    <footer class="footer">
+      <div class="footer__logo">
+
+      </div>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item"></li>
+          <li class="social__item"></li>
+          <li class="social__item"></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p></p>
+        <p></p>
+      </div>
+    </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>

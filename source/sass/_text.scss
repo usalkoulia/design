@@ -1,0 +1,10 @@
+.text {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+
+  &--light {
+    color: #ffffff;
+  }
+}

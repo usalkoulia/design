@@ -30,7 +30,7 @@
   width: 40px;
   height: 4px;
   border-radius: 2px;
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .toggle__label::before {
@@ -41,9 +41,11 @@
   0% {
     transform: rotate(315deg);
   }
+
   25% {
     transform: rotate(360deg);
   }
+
   50%,
   100% {
     transform: rotate(0deg);
@@ -59,9 +61,11 @@
   50% {
     transform: rotate(0deg);
   }
+
   75% {
     transform: rotate(360deg);
   }
+
   100% {
     transform: rotate(315deg);
   }
@@ -76,7 +80,7 @@
   width: 40px;
   height: 4px;
   border-radius: 2px;
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .toggle__label::after {
@@ -87,9 +91,11 @@
   0% {
     transform: rotate(405deg);
   }
+
   25% {
     transform: rotate(450deg);
   }
+
   50%,
   100% {
     transform: rotate(0deg);
@@ -105,9 +111,11 @@
   50% {
     transform: rotate(0deg);
   }
+
   75% {
     transform: rotate(450deg);
   }
+
   100% {
     transform: rotate(405deg);
   }
@@ -121,7 +129,7 @@
   width: 40px;
   height: 4px;
   border-radius: 2px;
-  background: #fafafa;
+  background: #ffffff;
   animation: animationburgertopreverse 1s ease forwards;
 }
 
@@ -131,12 +139,14 @@
     transform: translateY(12px);
     opacity: 0;
   }
+
   51% {
     transform: translateY(12px);
     opacity: 1;
   }
+
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -147,13 +157,15 @@
 
 @keyframes animationburgertop {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0);
     opacity: 1;
   }
+
   50% {
     transform: translateY(12px);
     opacity: 1;
   }
+
   51%,
   100% {
     transform: translateY(12px);
@@ -168,7 +180,7 @@
   width: 40px;
   height: 4px;
   border-radius: 2px;
-  background: #fafafa;
+  background: #ffffff;
   animation: animationburgerbottomreverse 1s ease forwards;
 }
 
@@ -178,12 +190,14 @@
     transform: translateY(-12px);
     opacity: 0;
   }
+
   51% {
     transform: translateY(-12px);
     opacity: 1;
   }
+
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -194,13 +208,15 @@
 
 @keyframes animationburgerbottom {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0);
     opacity: 1;
   }
+
   50% {
     transform: translateY(-12px);
     opacity: 1;
   }
+
   51%,
   100% {
     transform: translateY(-12px);

@@ -8,8 +8,28 @@
   background-repeat: no-repeat;
   background-position: center top;
   text-align: center;
+  margin-bottom: 55px;
 }
 
 .hero__title {
   margin-bottom: 25px;
+}
+
+.hero__slogan {
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  height: 54px;
+  width: 223px;
+  background-color: #f8a25a;
+  font-family: $primary-font;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
 }

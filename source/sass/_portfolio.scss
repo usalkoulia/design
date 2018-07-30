@@ -1,3 +1,42 @@
 .portfolio {
-  padding-bottom: 70px;
+  padding: 15px;
+  margin-bottom: 65px;
+  border: 1px solid green;
+}
+
+.portfolio__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.portfolio__list {
+  list-style-type: none;
+}
+
+.portfolio__item {
+  font-family: $primary-font;
+  font-weight: 400;
+  color: $primary-font-color;
+  font-size: 22px;
+  margin-bottom: 30px;
+
+  &--active {
+    color: $secondary-font-color;
+    font-weight: 500;
+  }
+}
+
+.portfolio__slider-item {
+  text-align: center;
+
+  &--boho,
+  &--loft {
+    display: none;
+  }
+}
+
+.portfolio__slider-figcaption {
+  font-family: $primary-font;
+  font-size: 18px;
+  color: $secondary-font-color;
 }

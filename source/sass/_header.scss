@@ -1,5 +1,5 @@
 .header {
-  background-color: pink;
+  border: 1px solid red;
   opacity: 0.5;
   position: absolute;
   left: 0;
@@ -11,6 +11,8 @@
 
 .header__wrapper {
   height: 45px;
+  display: flex;
+  align-items: center;
 }
 
 .header__navigation-mask {

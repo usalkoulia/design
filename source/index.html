@@ -15,14 +15,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <!-- <div style="display: none">
-      <include src="build/img/sprite.svg"></include>
-    </div> -->
     <header class="header">
       <div class="header__centering">
         <div class="header__wrapper">
-          <p>хедер это я</p>
-          <a class="header__logo" href="#"></a>
+          <div class="header__logo">
+            <a class="header__logo-link" href="#">
+              <img src="img/logo-mobile.png" width="37" height="23" alt="Логотип студии дизайна Brume">
+            </a>
+          </div>
           <div class="header__toggle toggle">
             <input class="toggle__input" id="click" name="exit" type="checkbox"></input>
             <label class="toggle__label" for="click">
@@ -57,6 +57,9 @@
           <h1 class="hero__title title title--big">Дизайн интерьеров</h1>
           <p class="hero__slogan text text--light">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
           <button class="hero__button" type="button">Заказать дизайн</button>
+          <div class="hero__arrow-wrapper">
+            <a class="hero__arrow" href="#to-form" aria-label="Перейти к форме связи с менеджером"></a>
+          </div>
         </div>
       </section>
 
@@ -170,7 +173,7 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback" id="to-form">
         <div class="feedback__centering">
           <div class="feedback__wrapper">
             <h2 class="feedback__title title title--middle">Мечтаете об интерьере от BRUME?</h2>
@@ -216,7 +219,7 @@
     <footer class="footer">
       <div class="footer__logo">
         <a class="footer__logo-link" href="#">
-          <img src="img/logo-footer-mobile.png" width="70" height="40" alt="Логотип студии дизайна Brume">
+          <img src="img/logo-mobile.png" width="70" height="40" alt="Логотип студии дизайна Brume">
         </a>
       </div>
       <div class="footer__social social">
@@ -229,16 +232,16 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="facebook.com" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+            <a href="instagram.com" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="instagram.com" aria-label="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+            <a href="facebook.com" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
               </svg>
             </a>
           </li>

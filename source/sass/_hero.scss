@@ -33,4 +33,20 @@
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.hero__arrow-wrapper {
+  display: flex;
+}
+
+.hero__arrow {
+  display: block;
+  height: 58px;
+  width: 14px;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }

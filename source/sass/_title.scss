@@ -10,14 +10,13 @@
   &--middle {
     font-family: $secondary-font;
     font-size: 45px;
-    color: $secondary-font-color;
     font-weight: bold;
   }
 
   &--little {
     font-family: $primary-font;
     font-size: 24px;
-    color: $secondary-font-color;
+    line-height: 30px;
     font-weight: 600;
   }
 }

@@ -1,8 +1,43 @@
 .stages {
   border: 1px solid MediumBlue;
   margin-bottom: 100px;
+  padding: 15px;
+}
+
+.stages__title {
+  margin-bottom: 40px;
+  text-align: center;
+  color: $secondary-font-color;
+}
+
+.stages__list {
+  list-style-type: none;
 }
 
 .stages__item {
   border: 1px solid red;
+
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+
+.stages__like-title {
+  margin-bottom: 30px;
+  position: relative;
+  color: #313131;
+}
+
+.stages__like-title::after {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 1px;
+  background-color: $secondary-font-color;
+  top: 43px;
+  left: 0;
+}
+
+.stages__text {
+  color: #5e5e5e;
 }

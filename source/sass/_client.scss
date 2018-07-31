@@ -1,0 +1,32 @@
+.client {
+  background-color: #ffffff;
+  position: relative;
+  padding: 195px 15px 50px 15px;
+}
+
+.client__photo {
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 107px);
+}
+
+.client__name {
+  color: #313131;
+  margin-bottom: 10px;
+}
+
+.client__service {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 18px;
+  color: #efb172;
+  margin-bottom: 20px;
+}
+
+.client__comment {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #5e5e5e;
+}

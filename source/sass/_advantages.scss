@@ -13,6 +13,7 @@
   min-height: 250px;
   padding-top: 70px;
   position: relative;
+  margin-bottom: 40px;
 
   &--one::before {
     content: "01";
@@ -35,8 +36,17 @@
   font-family: $secondary-font;
   font-weight: bold;
   font-size: 85px;
-  top: 0;
-  left: 10px;
+  line-height: 0;
+  top: 15px;
+  left: 0;
   position: absolute;
   color: #fde3c9;
+}
+
+.advantages__title {
+  color: #1a292f;
+}
+
+.advantages__text {
+  color: #838383;
 }

@@ -4,3 +4,10 @@
   font-size: 18px;
   line-height: 25px;
 }
+
+@media (min-width: $tablet-min-width) {
+  .text {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}

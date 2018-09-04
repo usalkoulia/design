@@ -1,0 +1,35 @@
+.navigation {
+  background-color: #112537;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding-top: 100px;
+}
+
+.navigation__list {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navigation__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
+}
+
+.navigation__link {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 42px;
+  font-family: $primary-font;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &--active {
+    color: #f8a25a;
+  }
+}

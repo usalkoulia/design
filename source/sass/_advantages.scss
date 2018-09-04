@@ -50,3 +50,24 @@
 .advantages__text {
   color: #838383;
 }
+
+@media (min-width: $tablet-min-width) {
+  .advantages {
+    padding: 35px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 50%;
+    margin-bottom: 0;
+    padding-right: 65px;
+
+    &:nth-child(2n) {
+      margin-top: 165px;
+    }
+  }
+}

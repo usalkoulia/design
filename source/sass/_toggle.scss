@@ -223,3 +223,14 @@
     opacity: 0;
   }
 }
+
+@media (min-width: $tablet-min-width) {
+  .toggle {
+    right: 35px;
+  }
+
+  .toggle__label {
+    width: 64px;
+    height: 44px;
+  }
+}

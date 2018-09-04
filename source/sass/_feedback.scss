@@ -15,12 +15,21 @@
 
 .feedback__title {
   color: #ffffff;
+  max-width: 550px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
 .feedback__text {
   color: #ffffff;
+  max-width: 420px;
+  margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.feedback__form {
+  max-width: 475px;
+  margin: 0 auto;
 }
 
 .feedback__fieldset {
@@ -52,7 +61,9 @@
 
 .feedback__button {
   height: 71px;
-  width: 290px;
+  max-width: 475px;
+  display: block;
+  width: 100%;
   background-color: #f8a25a;
   font-family: $primary-font;
   font-weight: 400;
@@ -64,6 +75,7 @@
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
+  margin: 0 auto;
   margin-bottom: 15px;
   margin-top: auto;
 }
@@ -74,4 +86,11 @@
   font-weight: 400;
   color: #ffffff;
   width: 95%;
+  opacity: 0.5;
+}
+
+@media (min-width: $tablet-min-width) {
+  .feedback__button {
+    width: 475px;
+  }
 }

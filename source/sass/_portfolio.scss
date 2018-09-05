@@ -41,3 +41,23 @@
   font-size: 18px;
   color: $secondary-font-color;
 }
+
+@media (min-width: $tablet-min-width) {
+  .portfolio {
+    padding: 35px;
+  }
+
+  .portfolio__title {
+    text-align: left;
+  }
+
+  .portfolio__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio__slider-figcaption {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

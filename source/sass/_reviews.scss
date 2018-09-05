@@ -31,3 +31,14 @@
     background-color: #1a444a;
   }
 }
+
+@media (min-width: $tablet-min-width) {
+  .reviews {
+    padding: 35px;
+    padding-bottom: 150px;
+  }
+
+  .reviews__title {
+    text-align: left;
+  }
+}

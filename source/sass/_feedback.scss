@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: 910px;
   background-position: center;
+  background-color: $secondary-background-color;
 }
 
 .feedback__wrapper {
@@ -66,9 +67,8 @@
   width: 100%;
   background-color: #f8a25a;
   font-family: $primary-font;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 18px;
-  letter-spacing: 0.1em;
   color: #ffffff;
   border: 0;
   border-radius: 4px;
@@ -78,19 +78,46 @@
   margin: 0 auto;
   margin-bottom: 15px;
   margin-top: auto;
+  letter-spacing: 3px;
 }
 
 .feedback__label {
   font-family: $primary-font;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
-  width: 95%;
+  padding: 0 6px;
   opacity: 0.5;
 }
 
 @media (min-width: $tablet-min-width) {
   .feedback__button {
     width: 475px;
+  }
+
+  .feedback__text {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .feedback__input {
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &--name {
+      background-image: url("../img/input-icon-name.png");
+    }
+
+    &--phone {
+      background-image: url("../img/input-icon-phone.png");
+    }
+
+    &--email {
+      background-image: url("../img/input-icon-email.png");
+    }
+  }
+
+  .feedback__label {
+    font-size: 18px;
   }
 }

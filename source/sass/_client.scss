@@ -30,3 +30,21 @@
   line-height: 30px;
   color: #5e5e5e;
 }
+
+@media (min-width: $tablet-min-width) {
+  .client {
+    padding: 50px 140px 50px 70px;
+    text-align: left;
+    margin-right: 45px;
+  }
+
+  .client__photo {
+    right: -80px;
+    left: auto;
+    top: 70px;
+  }
+
+  .client__service {
+    letter-spacing: 1px;
+  }
+}

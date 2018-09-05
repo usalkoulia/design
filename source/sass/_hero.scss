@@ -7,9 +7,9 @@
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: $secondary-background-color;
   text-align: center;
   margin-bottom: 55px;
-  text-align: center;
 }
 
 .hero__title {
@@ -57,6 +57,10 @@
     padding: 35px;
     padding-top: 300px;
     min-height: 1110px;
+  }
+
+  .hero__centering {
+    @include tablet-centering;
   }
 
   .hero__title {

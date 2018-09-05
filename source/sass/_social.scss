@@ -8,3 +8,34 @@
 .social__item:not(:last-child) {
   margin-right: 70px;
 }
+
+@media (min-width: $tablet-min-width) {
+  .social {
+    &--header {
+      .social__item:not(:last-child) {
+        margin-right: 105px;
+      }
+    }
+
+    &--footer {
+      .social__item:not(:last-child) {
+        margin-right: 47px;
+      }
+    }
+  }
+
+  .social__icon-vk {
+    width: 37px;
+    height: 24px;
+  }
+
+  .social__icon-instagram {
+    width: 37px;
+    height: 37px;
+  }
+
+  .social__icon-facebook {
+    width: 21px;
+    height: 37px;
+  }
+}

@@ -5,6 +5,7 @@
   top: 0;
   right: 0;
   padding-top: 100px;
+  min-height: 608px;
 }
 
 .navigation__list {
@@ -26,10 +27,31 @@
   line-height: 42px;
   font-family: $primary-font;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 2px;
 
   &--active {
     color: #f8a25a;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .navigation {
+    min-height: 1110px;
+    padding-top: 230px;
+  }
+
+  .navigation__item {
+    margin-bottom: 70px;
+
+    &:last-child {
+      margin-bottom: 100px;
+    }
+  }
+
+  .navigation__link {
+    font-size: 35px;
+    letter-spacing: 5px;
   }
 }

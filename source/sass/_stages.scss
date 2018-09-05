@@ -1,6 +1,6 @@
 .stages {
   border: 1px solid MediumBlue;
-  margin-bottom: 100px;
+  margin-bottom: 55px;
   padding: 15px;
 }
 
@@ -16,10 +16,7 @@
 
 .stages__item {
   border: 1px solid red;
-
-  &:not(:last-child) {
-    margin-bottom: 45px;
-  }
+  margin-bottom: 45px;
 }
 
 .stages__like-title {
@@ -40,4 +37,70 @@
 
 .stages__text {
   color: #5e5e5e;
+}
+
+@media (min-width: $tablet-min-width) {
+  .stages {
+    padding: 35px;
+  }
+
+  .stages__title {
+    text-align: left;
+  }
+
+  .stages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stages__item {
+    width: 50%;
+    padding-left: 80px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  .stages__item::before {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fde5d1;
+    top: 0;
+    left: 20px;
+    font-family: $primary-font;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .stages__item--one::before {
+    content: "1";
+  }
+
+  .stages__item--two::before {
+    content: "2";
+  }
+
+  .stages__item--three::before {
+    content: "3";
+  }
+
+  .stages__item--four::before {
+    content: "4";
+  }
+
+  .stages__item--five::before {
+    content: "5";
+  }
+
+  .stages__item--six::before {
+    content: "6";
+  }
+
+  .stages__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }

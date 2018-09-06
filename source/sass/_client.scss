@@ -1,7 +1,10 @@
 .client {
   background-color: #ffffff;
-  position: relative;
   padding: 195px 15px 50px 15px;
+}
+
+.client__wrapper {
+  position: relative;
 }
 
 .client__photo {
@@ -46,5 +49,29 @@
 
   .client__service {
     letter-spacing: 1px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .client {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 275px;
+    transform: translateX(-72px);
+  }
+
+  .client__photo {
+    right: -280px;
+    top: calc(50% - 107px);
+  }
+
+  .client__service {
+    font-size: 16px;
+  }
+
+  .client__comment {
+    font-size: 16px;
+    line-height: 25px;
   }
 }

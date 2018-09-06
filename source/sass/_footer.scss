@@ -53,3 +53,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .footer {
+    padding: 95px;
+  }
+
+  .footer__centering {
+    @include desktop-centering;
+  }
+}

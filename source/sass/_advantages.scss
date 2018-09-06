@@ -72,3 +72,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .advantages {
+    padding: 95px;
+  }
+
+  .advantages__centering {
+    @include desktop-centering;
+  }
+
+  .advantages__item {
+    width: 25%;
+  }
+}

@@ -11,3 +11,10 @@
     line-height: 35px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

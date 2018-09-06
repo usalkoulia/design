@@ -42,3 +42,9 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .reviews__item {
+    margin-bottom: 80px;
+  }
+}

@@ -1,7 +1,7 @@
 .feedback {
   height: 910px;
   margin-bottom: 140px;
-  background-image: url("../img/form-bg.jpg");
+  background-image: url("../img/feedback-bg.jpg");
   background-repeat: no-repeat;
   background-size: 910px;
   background-position: center;
@@ -119,5 +119,67 @@
 
   .feedback__label {
     font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .feedback {
+    padding: 0 95px;
+    background-image: url("../img/feedback-desktop.jpg");
+    background-position: top right;
+    background-size: 50%;
+    height: auto;
+  }
+
+  .feedback__centering {
+    @include desktop-centering;
+  }
+
+  .feedback__wrapper {
+    width: 50%;
+    background-color: $secondary-background-color;
+    text-align: left;
+    padding-top: 75px;
+    padding-right: 70px;
+  }
+
+  .feedback__title {
+    max-width: none;
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .feedback__text {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    opacity: 0.6;
+  }
+
+  .feedback__form {
+    margin: 0;
+    margin-bottom: 45px;
+  }
+
+  .feedback__fieldset {
+    margin-bottom: 45px;
+  }
+
+  .feedback__input {
+    opacity: 0.6;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .feedback__button {
+    background: transparent;
+    border: solid 2px #ffffff;
+    font-size: 15px;
+  }
+
+  .feedback__label {
+    font-size: 14px;
   }
 }

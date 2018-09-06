@@ -104,3 +104,21 @@
     line-height: 25px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .stages {
+    padding: 95px;
+  }
+
+  .stages__centering {
+    @include desktop-centering;
+  }
+
+  .stages__list {
+    justify-content: space-between;
+  }
+
+  .stages__item {
+    width: 30%;
+  }
+}

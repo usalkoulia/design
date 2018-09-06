@@ -134,3 +134,43 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .services {
+    padding: 95px;
+  }
+
+  .services__centering {
+    @include desktop-centering;
+  }
+
+  .services__slider-wrapper {
+    display: flex;
+  }
+
+  .services__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+  }
+
+  .services__item {
+    width: 250px;
+    margin-bottom: 80px;
+
+    &--active {
+      padding-left: 30px;
+    }
+  }
+
+  .services__slider-list {
+    flex-basis: 880px;
+  }
+
+  .services__slider-image {
+    width: 880px;
+    height: 390px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

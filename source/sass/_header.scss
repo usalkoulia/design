@@ -24,6 +24,13 @@
 
 .header__toggle {
   z-index: 10;
+  position: absolute;
+  top: auto;
+  right: 15px;
+}
+
+.header__phone {
+  display: none;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -36,5 +43,35 @@
       height: 45px;
       width: 83px;
     }
+  }
+
+  .header__toggle {
+    right: 35px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .header__logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+  }
+
+  .header__toggle {
+    right: auto;
+    left: 95px;
+    top: 30px;
+  }
+
+  .header__phone {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 95px;
+  }
+
+  .header__phone-number {
+    font-size: 14px;
+    color: #ffffff;
   }
 }

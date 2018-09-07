@@ -107,7 +107,8 @@
 
 @media (min-width: $desktop-min-width) {
   .stages {
-    padding: 95px;
+    padding: 55px 95px;
+    margin-bottom: 0;
   }
 
   .stages__centering {

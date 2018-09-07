@@ -2,3 +2,9 @@
   margin-bottom: 100px;
   background-color: #E6E6FA;
 }
+
+@media (min-width: $desktop-min-width) {
+  .video {
+    margin-bottom: 60px;
+  }
+}

@@ -1,6 +1,11 @@
 .client {
   background-color: #ffffff;
   padding: 195px 15px 50px 15px;
+  display: none;
+
+  &--active {
+    display: block;
+  }
 }
 
 .client__wrapper {
@@ -9,7 +14,7 @@
 
 .client__photo {
   position: absolute;
-  top: -40px;
+  top: -245px;
   left: calc(50% - 107px);
 }
 
@@ -42,9 +47,9 @@
   }
 
   .client__photo {
-    right: -80px;
+    right: -220px;
     left: auto;
-    top: 70px;
+    top: calc(50% - 107px);
   }
 
   .client__service {
@@ -55,10 +60,54 @@
 @media (min-width: $desktop-min-width) {
   .client {
     width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -72px;
     min-height: 275px;
-    transform: translateX(-72px);
+  }
+
+  .client::before {
+    content: "";
+    width: 214px;
+    height: 214px;
+    position: absolute;
+    top: calc(50% - 107px);
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .client--one::before {
+    background-image: url("../img/client-3.jpg");
+  }
+
+  .client--two::before {
+    background-image: url("../img/client-1.jpg");
+  }
+
+  .client--three::before {
+    background-image: url("../img/client-2.jpg");
+  }
+
+  .client::after {
+    content: "";
+    width: 214px;
+    height: 214px;
+    position: absolute;
+    top: calc(50% - 107px);
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .client--one::after {
+    background-image: url("../img/client-2.jpg");
+  }
+
+  .client--two::after {
+    background-image: url("../img/client-3.jpg");
+  }
+
+  .client--three::after {
+    background-image: url("../img/client-1.jpg");
   }
 
   .client__photo {

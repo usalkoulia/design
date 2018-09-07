@@ -137,11 +137,16 @@
 
 @media (min-width: $desktop-min-width) {
   .services {
-    padding: 95px;
+    padding: 55px 95px;
+    margin-bottom: 60px;
   }
 
   .services__centering {
     @include desktop-centering;
+  }
+
+  .services__title {
+    margin-bottom: 50px;
   }
 
   .services__slider-wrapper {
@@ -152,6 +157,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     flex-grow: 1;
+    padding-top: 10px;
   }
 
   .services__item {

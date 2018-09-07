@@ -39,3 +39,28 @@
     height: 37px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .social {
+    &--hero {
+      .social__item:not(:last-child) {
+        margin-right: 36px;
+      }
+    }
+
+    .social__icon-vk {
+      width: 14px;
+      height: 10px;
+    }
+
+    .social__icon-instagram {
+      width: 14px;
+      height: 14px;
+    }
+
+    .social__icon-facebook {
+      width: 7px;
+      height: 14px;
+    }
+  }
+}

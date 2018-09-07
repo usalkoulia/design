@@ -55,3 +55,28 @@
     letter-spacing: 5px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .navigation {
+    min-height: 595px;
+    padding-top: 130px;
+    top: 84px;
+    right: 95px;
+    bottom: 90px;
+    left: 95px;
+  }
+
+  .navigation__item {
+    margin-bottom: 20px;
+  }
+
+  .navigation__link {
+    font-size: 20px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}

@@ -1,6 +1,5 @@
 .reviews {
   text-align: center;
-  border: 1px solid green;
   padding: 15px;
   padding-bottom: 200px;
   background-color: pink;
@@ -12,9 +11,6 @@
 
 .reviews__list {
   list-style-type: none;
-}
-
-.reviews__item {
   margin-bottom: 50px;
 }
 
@@ -44,7 +40,44 @@
 }
 
 @media (min-width: $desktop-min-width) {
-  .reviews__item {
+  .reviews {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .reviews__title {
+    @include desktop-centering;
     margin-bottom: 80px;
+  }
+
+  .reviews__slider {
+    position: relative;
+  }
+
+  .reviews__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .reviews__client-button {
+    width: 214px;
+    height: 214px;
+    background-color: $secondary-background-color;
+    opacity: 0.5;
+    position: absolute;
+    border: none;
+    z-index: 10;
+    top: calc(50% - 107px);
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
   }
 }

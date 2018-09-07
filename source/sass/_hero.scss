@@ -52,6 +52,10 @@
   margin: 0 auto;
 }
 
+.hero__social {
+  display: none;
+}
+
 @media (min-width: $tablet-min-width) {
   .hero {
     padding: 35px;
@@ -89,9 +93,10 @@
     background-image: url("../img/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center 85px;
-    // background-color: $primary-background-color;
+    background-color: $primary-background-color;
     padding: 260px 95px 85px 95px;
     min-height: 770px;
+    margin-bottom: 35px;
   }
 
   .hero__centering {
@@ -102,9 +107,8 @@
     width: 50%;
     height: 770px;
     text-align: left;
-    // background-color: $secondary-background-color;
-    background-color: pink;
-    opacity: 0.7;
+    background-color: $secondary-background-color;
+    opacity: 0.97;
     position: absolute;
     top: 0;
     left: 0;
@@ -119,6 +123,7 @@
   .hero__slogan {
     padding-right: 150px;
     margin-bottom: 35px;
+    letter-spacing: 1px;
   }
 
   .hero__button {
@@ -131,5 +136,12 @@
 
   .hero__arrow {
     display: none;
+  }
+
+  .hero__social {
+    display: block;
+    position: absolute;
+    left: 95px;
+    bottom: 35px;
   }
 }

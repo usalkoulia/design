@@ -132,6 +132,12 @@
     font-size: 15px;
     line-height: 56px;
     letter-spacing: 2px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+
+    &:hover {
+      background-color: #f8a25a;
+    }
   }
 
   .hero__arrow {

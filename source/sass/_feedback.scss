@@ -178,6 +178,11 @@
     background: transparent;
     border: solid 2px #ffffff;
     font-size: 15px;
+
+    &:hover {
+      background-color: #f8a25a;
+      border: none;
+    }
   }
 
   .feedback__label {

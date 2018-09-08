@@ -163,10 +163,15 @@
   .services__item {
     width: 250px;
     margin-bottom: 80px;
+    cursor: pointer;
 
     &--active {
       padding-left: 30px;
     }
+  }
+
+  .services__slider-item-wrapper {
+    padding-right: 360px;
   }
 
   .services__slider-list {
@@ -178,5 +183,21 @@
     height: 390px;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .services__slider-button {
+    width: 217px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 105px;
+
+    &:hover {
+      background-color: #f8a25a;
+      color: #ffffff;
+      border: none;
+    }
   }
 }

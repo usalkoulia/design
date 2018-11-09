@@ -1,5 +1,4 @@
 .header {
-  border: 1px solid red;
   position: absolute;
   left: 0;
   right: 0;
@@ -51,6 +50,10 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .header {
+    padding: 35px 95px;
+  }
+
   .header__centering {
     @include desktop-centering;
     position: relative;
@@ -64,15 +67,15 @@
 
   .header__toggle {
     right: auto;
-    left: 95px;
-    top: 25px;
+    left: 5px;
+    top: 0;
   }
 
   .header__phone {
     display: block;
     position: absolute;
-    top: 30px;
-    right: 95px;
+    top: 0;
+    right: 5px;
   }
 
   .header__phone-number {

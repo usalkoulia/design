@@ -73,6 +73,7 @@
 
   .hero__slogan {
     margin-bottom: 60px;
+    font-weight: 500;
   }
 
   .hero__button {
@@ -100,7 +101,11 @@
   }
 
   .hero__centering {
-    @include desktop-centering;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 650px;
+    padding-right: 50px;
+    position: relative;
   }
 
   .hero__wrapper {
@@ -112,8 +117,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding-left: 190px;
-    padding-top: 250px;
+    padding: 250px 0 50px 95px;
   }
 
   .hero__title {
@@ -147,7 +151,7 @@
   .hero__social {
     display: block;
     position: absolute;
-    left: 95px;
-    bottom: 35px;
+    bottom: -105px;
+    left: 0;
   }
 }

@@ -161,12 +161,16 @@
   }
 
   .services__item {
-    width: 250px;
-    margin-bottom: 80px;
+    width: 200px;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 65px;
     cursor: pointer;
 
     &--active {
+      width: 250px;
       padding-left: 30px;
+      font-weight: bold;
     }
   }
 

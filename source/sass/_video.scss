@@ -66,13 +66,20 @@
 
 .video__close-button {
   font-family: $primary-font;
-  font-size: 60px;
   color: #f5b77f;
-  font-weight: 500;
+  vertical-align: top;
+  background: none;
+  border: none;
   position: absolute;
-  top: -65px;
+  top: -60px;
   right: 20px;
   cursor: pointer;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    fill: $hover-color;
+  }
 }
 
 @media (min-width: $tablet-min-width) {
@@ -120,5 +127,11 @@
 
   .video__text {
     font-size: 18px;
+  }
+
+  .video__close-button {
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }

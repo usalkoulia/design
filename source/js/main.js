@@ -26,3 +26,8 @@ modal_close_button.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal.classList.remove("video__modal--active");
 });
+
+
+// плавная прокрутка
+
+new SmoothScroll("a[href*='#']");

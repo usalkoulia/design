@@ -30,10 +30,6 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-
-  &--active {
-    color: #f8a25a;
-  }
 }
 
 @media (min-width: $tablet-min-width) {
@@ -60,10 +56,10 @@
   .navigation {
     min-height: 595px;
     padding-top: 130px;
-    top: 84px;
-    right: 95px;
+    right: 0;
+    left: 0;
+    top: 50px;
     bottom: 90px;
-    left: 95px;
   }
 
   .navigation__item {
@@ -74,6 +70,11 @@
     font-size: 20px;
     letter-spacing: 2px;
     opacity: 0.5;
+
+    &:hover {
+      color: $hover-color;
+      opacity: 1;
+    }
 
     &--active {
       opacity: 1;

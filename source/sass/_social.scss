@@ -36,19 +36,21 @@
     }
   }
 
-  .social__icon-vk {
-    width: 37px;
-    height: 24px;
-  }
+  .social__icon {
+    &--vk {
+      width: 37px;
+      height: 24px;
+    }
 
-  .social__icon-instagram {
-    width: 37px;
-    height: 37px;
-  }
+    &--instagram {
+      width: 37px;
+      height: 37px;
+    }
 
-  .social__icon-facebook {
-    width: 21px;
-    height: 37px;
+    &--facebook {
+      width: 21px;
+      height: 37px;
+    }
   }
 }
 

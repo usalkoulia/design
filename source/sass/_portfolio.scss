@@ -12,6 +12,7 @@
 
 .portfolio__list {
   list-style-type: none;
+  margin-bottom: 30px;
 }
 
 .portfolio__item {
@@ -19,7 +20,6 @@
   font-weight: 400;
   color: $primary-font-color;
   font-size: 22px;
-  margin-bottom: 30px;
 
   &--active {
     color: $secondary-font-color;
@@ -40,6 +40,7 @@
   font-family: $primary-font;
   font-size: 18px;
   color: $secondary-font-color;
+  z-index: 10;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -75,13 +76,16 @@
   .portfolio__list {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 45px;
   }
 
   .portfolio__item {
     margin-right: 60px;
+    padding-bottom: 10px;
+    font-size: 18px;
 
     &--active {
-      text-decoration: underline;
+      border-bottom: 1px solid $secondary-background-color;
     }
   }
 
@@ -99,6 +103,19 @@
       display: block
     }
 
+    &::before {
+      content: "Дизайн интерьера";
+      position: absolute;
+      font-weight: 400;
+      font-family: $primary-font;
+      color: #ffffff;
+      font-size: 14px;
+      transform: rotate(270deg);
+      left: -30px;
+      bottom: 80px;
+      z-index: 10;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -112,6 +129,15 @@
 
     &--active {
       flex: 1.5;
+
+      &::before,
+      .portfolio__slider-figcaption {
+        display: none;
+      }
+
+      .portfolio__slider-button {
+        display: block;
+      }
 
       &::after {
         opacity: 0;
@@ -133,5 +159,24 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  .portfolio__slider-button {
+    width: 84px;
+    height: 84px;
+    background-color: #fcbd84;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.95;
+    position: absolute;
+    left: calc(50% - 43px);
+    top: calc(50% - 43px);
+    cursor: pointer;
+    display: none;
+
+    svg {
+      width: 45px;
+      height: 45px;
+    }
   }
 }

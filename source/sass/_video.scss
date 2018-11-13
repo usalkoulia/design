@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .video__icon {
@@ -65,20 +66,21 @@
 }
 
 .video__close-button {
-  font-family: $primary-font;
-  color: #f5b77f;
-  vertical-align: top;
-  background: none;
+  width: 84px;
+  height: 84px;
+  background-color: #fcbd84;
   border: none;
+  border-radius: 50%;
   position: absolute;
-  top: -60px;
+  top: 20px;
   right: 20px;
   cursor: pointer;
 
   .icon {
     width: 50px;
     height: 50px;
-    fill: $hover-color;
+    fill: #ffffff;
+    transform: rotate(45deg);
   }
 }
 
@@ -129,9 +131,10 @@
     font-size: 18px;
   }
 
-  .video__close-button {
+  .video__close-button,
+  .video__button {
     &:hover {
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 }

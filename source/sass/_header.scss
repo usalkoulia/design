@@ -21,6 +21,19 @@
   }
 }
 
+.header__logo-link {
+  display: inline-block;
+
+  svg {
+    width: 20px;
+    height: 23px;
+
+    path {
+      stroke: #ffffff;
+    }
+  }
+}
+
 .header__toggle {
   z-index: 10;
   position: absolute;
@@ -37,15 +50,15 @@
     padding: 35px;
   }
 
-  // .header__logo-link {
-  //   img {
-  //     height: 45px;
-  //     width: 83px;
-  //   }
-  // }
-
   .header__toggle {
     right: 35px;
+  }
+
+  .header__logo-link {
+    svg {
+      width: 45px;
+      height: 45px;
+    }
   }
 }
 
@@ -63,6 +76,21 @@
     position: absolute;
     top: 0;
     left: calc(50% - 30px);
+  }
+
+  .header__logo-link {
+    svg {
+      width: 20px;
+      height: 30px;
+
+      &:nth-child(2) {
+        margin-left: 15px;
+
+        path {
+          stroke: #000000;
+        }
+      }
+    }
   }
 
   .header__toggle {

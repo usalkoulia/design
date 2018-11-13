@@ -4,12 +4,30 @@
   min-height: 608px;
   position: relative;
   z-index: 0;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/hero-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: $secondary-background-color;
   text-align: center;
   margin-bottom: 55px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $secondary-background-color;
+    opacity: 0.9;
+    z-index: 5;
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+  z-index: 10;
 }
 
 .hero__title {
@@ -93,11 +111,15 @@
   .hero {
     background-image: url("../img/hero-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center 85px;
+    background-position: center;
+    background-size: auto;
     background-color: $primary-background-color;
-    padding: 260px 95px 85px 95px;
     min-height: 770px;
-    margin-bottom: 35px;
+    margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .hero__centering {

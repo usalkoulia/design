@@ -103,6 +103,13 @@
     position: relative;
   }
 
+  .services__slider-image {
+    margin-left: -35px;
+    margin-right: -35px;
+    width: calc(100% + 70px);
+    max-width: calc(100% + 70px);
+  }
+
   .services__slider-title {
     display: block;
     font-family: $secondary-font;

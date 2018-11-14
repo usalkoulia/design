@@ -25,6 +25,7 @@ modal_button.addEventListener("click", function(evt) {
 modal_close_button.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal.classList.remove("video__modal--active");
+  document.querySelector('iframe').contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
 });
 
 

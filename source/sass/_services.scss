@@ -1,7 +1,6 @@
 .services {
   margin-bottom: 80px;
   padding: 15px;
-  border: 1px solid blue;
 }
 
 .services__title {
@@ -33,6 +32,8 @@
   width: calc(100% + 30px);
   max-width: calc(100% + 30px);
   margin-bottom: 30px;
+  height: 390px;
+  object-fit: cover;
 }
 
 .services__slider-title {

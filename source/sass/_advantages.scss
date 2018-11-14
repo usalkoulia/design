@@ -1,6 +1,5 @@
 .advantages {
   padding: 15px;
-  border: 1px solid Cyan;
   margin-bottom: px;
 }
 
@@ -9,7 +8,6 @@
 }
 
 .advantages__item {
-  border: 1px solid red;
   min-height: 250px;
   padding-top: 70px;
   position: relative;
@@ -46,10 +44,13 @@
 .advantages__title {
   color: #1a292f;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .advantages__text {
   color: #838383;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 @media (min-width: $tablet-min-width) {

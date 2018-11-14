@@ -1,5 +1,4 @@
 .stages {
-  border: 1px solid MediumBlue;
   margin-bottom: 55px;
   padding: 15px;
 }
@@ -15,7 +14,6 @@
 }
 
 .stages__item {
-  border: 1px solid red;
   margin-bottom: 45px;
 }
 
@@ -55,7 +53,7 @@
 
   .stages__item {
     width: 50%;
-    padding-left: 80px;
+    padding-left: 70px;
     margin-bottom: 80px;
     position: relative;
   }
@@ -68,7 +66,7 @@
     background-color: #fde5d1;
     top: 0;
     left: 20px;
-    font-family: $primary-font;
+    font-family: "Arial", sans-serif;;
     font-size: 12px;
     line-height: 22px;
     font-weight: 500;

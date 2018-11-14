@@ -55,6 +55,11 @@
   .client__service {
     letter-spacing: 1px;
   }
+
+  .client__comment {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 @media (min-width: $desktop-min-width) {
@@ -117,10 +122,5 @@
 
   .client__service {
     font-size: 16px;
-  }
-
-  .client__comment {
-    font-size: 16px;
-    line-height: 25px;
   }
 }
